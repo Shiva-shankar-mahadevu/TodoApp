@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #bdb9b9f8;
+    margin: 0;
+    align-items: center;
+    height: 100vh;
+}
+
+#todo-container {
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+}
+
+h2 {
+    background-color: #3498db;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+input[type="text"], input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; 
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #258cd1;
+}
+
+#todos {
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+    font-weight:700;
+    min-width: 560px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: "Radio Canada Big", sans-serif;
+    background-color: #888;
+    transition: background-color 0.3s ease;
+}
+
+.complete {
+    text-decoration: line-through;
+
+    background-color: rgb(107, 179, 119);
+}
+
+.missed {
+    background-color: #d70a0aa0;
+}
